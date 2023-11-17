@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:background="#00EFFF"
     android:layout_height="match_parent"
-    android:background="#65B7F8"
-    tools:context=".DangKy">
+    tools:context=".DangNhap"
+    >
     <LinearLayout
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:weightSum="2"
+        android:orientation="horizontal"
         android:layout_height="wrap_content">
         <ImageView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_co_present_24"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/people"
+            android:layout_marginRight="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:text="Đăng Ký"
@@ -27,87 +28,110 @@
             android:textColor="@color/white"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tên Tài Khoản:"
-        android:layout_marginTop="40dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        />
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/ednametaiKhoanDangKy"
-    android:hint="Nhập tên tài khoản"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Số Điện Thoại:"
-        android:layout_marginTop="10dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        />
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edsodienthoaiDangKy"
-        android:hint="Nhập số điện thoai"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mật Khẩu:"
-        android:layout_marginTop="10dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ednmatkhauDangKy"
-        android:hint="Nhập mật khẩu"/> 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Xác nhận mật khẩu:"
-    android:layout_marginTop="10dp"
-    android:textSize="18dp"
-    android:textColor="@color/white"
-    />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edxacnhan"
-        android:hint="Nhập tên tài khoản"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#0850BF"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/custom_dangnhap_dangky"
+        android:backgroundTint="#ffff"
         android:padding="10dp"
-        android:text="Đăng Ký" />
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
-    android:layout_gravity="center"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        android:text="Bạn đã có tài khoản"
-        android:textColor="@color/white"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên đầy đủ"
+                />
 
-        android:text="Đăng Nhập"
-        android:textColor="#025DEA"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên tài khoản"
+                />
 
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00EFFF"
+            android:padding="10dp"
+            android:text="Đăng Ký"
+            android:textSize="24sp"
+            android:textColor="#ffff"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã có tài khoản ?"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_DangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                android:textColor="#0500FF"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
