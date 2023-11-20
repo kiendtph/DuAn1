@@ -11,4 +11,5 @@ public class DangNhap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_nhap);
     }
+    //;duowbg
 }
