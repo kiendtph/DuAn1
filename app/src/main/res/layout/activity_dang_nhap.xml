@@ -9,7 +9,7 @@
     tools:context=".DangNhap"
     >
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -47,7 +48,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -75,6 +77,7 @@
             android:textColor="#000000"
             />
         <Button
+            android:id="@+id/btn_DangNhap"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,23 +102,12 @@
                 android:layout_marginRight="10dp"
                 />
             <TextView
-                android:id="@+id/tv_DangNhap"
+                android:id="@+id/tv_DangKy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Đăng Ký"
                 android:textColor="#0500FF"/>
     </LinearLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="#12B4D8"
-            android:text="Quên mật khẩu"
-            />
-
-
-
     </LinearLayout>
 
 
