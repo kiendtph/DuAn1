@@ -1,10 +1,4 @@
-package kiendtph37589.fpoly.appbanquanao;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.RecyclerView;
+package kiendtph37589.fpoly.appbanquanao.Activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,11 +8,17 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
 
-import com.bumptech.glide.Glide;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import kiendtph37589.fpoly.appbanquanao.R;
 
 public class TrangChuActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -41,8 +41,8 @@ public class TrangChuActivity extends AppCompatActivity {
 
         // Create an ArrayList of images
         ArrayList<Integer> images = new ArrayList<>();
-        images.add(R.drawable.images1);
         images.add(R.drawable.imgae);
+        images.add(R.drawable.images3);
         images.add(R.drawable.images2);
 
         // Add the images to the ViewFlipper

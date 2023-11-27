@@ -16,29 +16,11 @@
         android:theme="@style/Theme.AppBanQuanAo"
         tools:targetApi="31">
         <activity
-            android:name=".TrangChuActivity"
-            android:exported="false" />
-        <activity
             android:name=".ChiTietSanPham"
             android:exported="false" />
         <activity
             android:name=".DoiMatKhau"
             android:exported="false" />
-        <activity
-            android:name=".DangNhap"
-            android:exported="false" />
-        <activity
-            android:name=".DangKy"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

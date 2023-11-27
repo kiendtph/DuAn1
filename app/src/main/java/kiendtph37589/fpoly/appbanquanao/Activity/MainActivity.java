@@ -1,6 +1,4 @@
-package kiendtph37589.fpoly.appbanquanao;
-
-import androidx.appcompat.app.AppCompatActivity;
+package kiendtph37589.fpoly.appbanquanao.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +7,10 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import kiendtph37589.fpoly.appbanquanao.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView img_Logo;
