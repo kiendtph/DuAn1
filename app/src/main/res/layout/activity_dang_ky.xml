@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#00EFFF"
     android:layout_height="match_parent"
-    tools:context=".DangNhap"
+    tools:context=".Activity.DangKy"
     >
     <LinearLayout
         android:layout_marginTop="50dp"
@@ -44,7 +44,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tên đầy đủ"
+                android:hint="Tên tài khoản"
+                android:id="@+id/edt_tenTK"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -55,7 +56,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tên tài khoản"
+                android:hint="Email"
+                android:id="@+id/edtEmail"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Số điện thoại"
+                android:id="@+id/edtSoDT"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -80,6 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mật khẩu"
+                android:id="@+id/edtMatKhau"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 />
@@ -93,6 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nhập lại mật khẩu"
+                android:id="@+id/edtNhapLaiMK"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 />
@@ -105,6 +110,7 @@
             android:backgroundTint="#00EFFF"
             android:padding="10dp"
             android:text="Đăng Ký"
+            android:id="@+id/btn_DangKy"
             android:textSize="24sp"
             android:textColor="#ffff"/>
 

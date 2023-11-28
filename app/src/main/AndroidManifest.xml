@@ -21,6 +21,23 @@
         <activity
             android:name=".DoiMatKhau"
             android:exported="false" />
+        <activity android:name=".Activity.TrangChuActivity"
+            android:exported="false"/>
+        <activity android:name=".Activity.DangNhap"
+            android:exported="false"/>
+        <activity android:name=".Activity.DangKy"
+            android:exported="false"/>
+        <activity android:name=".Activity.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
