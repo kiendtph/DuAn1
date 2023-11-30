@@ -1,122 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="#00EFFF"
     android:layout_height="match_parent"
-    tools:context=".DangNhap"
-    >
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/people"
-            android:layout_marginRight="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Đăng Nhập"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DoiMatKhau">
+
+    <ImageView
+        android:src="@drawable/reset_password"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtOldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu Cũ"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtnewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu Mới"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại Mật khẩu"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/custom_dangnhap_dangky"
-        android:backgroundTint="#ffff"
-        android:padding="10dp"
-        >
-
-        <ImageView
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            android:layout_gravity="center"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Tên tài khoản"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Mật khẩu"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ghi nhớ tài khoản"
-            android:textColor="#000000"
-            />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
         <Button
-            android:layout_margin="20dp"
-            android:layout_width="match_parent"
+            android:id="@+id/btnSave_changePass"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#00EFFF"
-            android:padding="10dp"
-            android:textSize="24sp"
-            android:text="Đăng Nhập"
-            android:textColor="#ffff"/>
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="#00EFFF"
+            android:text="LƯU"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
+        <Button
+            android:id="@+id/btnCancle_changePass"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bạn chưa có tài khoản ?"
-                android:textColor="@color/black"
-                android:layout_marginRight="10dp"
-                />
-            <TextView
-                android:id="@+id/tv_DangNhap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Đăng Ký"
-                android:textColor="#0500FF"/>
-        </LinearLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="#12B4D8"
-            android:text="Quên mật khẩu"
-            />
-
-
-
+            android:layout_weight="1"
+            android:background="#00EFFF"
+            android:text="HỦY"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
     </LinearLayout>
-
 
 </LinearLayout>

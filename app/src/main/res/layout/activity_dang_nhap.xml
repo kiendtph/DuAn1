@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#00EFFF"
     android:layout_height="match_parent"
-    tools:context=".DangNhap"
+    tools:context=".Activity.DangNhap"
     >
     <LinearLayout
         android:layout_marginTop="40dp"
