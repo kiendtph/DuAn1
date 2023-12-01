@@ -18,10 +18,7 @@ public class RetrofitClient {
 
     public static Retrofit getInstance(String baseUrl){
         if (instance == null){
-//            String json = baseUrl; // Thay chuỗi này bằng JSON thực tế bạn muốn đọc
-//            Reader reader = new StringReader(json);
-//            JsonReader jsonReader = new JsonReader(reader);
-//            jsonReader.setLenient(true);
+
             instance = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
